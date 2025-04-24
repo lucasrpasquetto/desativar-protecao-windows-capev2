@@ -8,8 +8,8 @@ Este script `.bat` desativa diversas proteções nativas do Windows para fins de
 ## 📜 Instruções
 
 1. **Antes de executar o script, desative manualmente a Proteção contra Adulteração (Tamper Protection)** — veja como no passo abaixo.
-2. Crie um arquivo chamado `desativa-protecao.bat`.
-3. Copie o conteúdo do script abaixo e cole dentro do arquivo.
+2. Crie um arquivo chamado `desativa-protecao.bat` — instruções de como fazer isso mais abaixo.
+3. Copie o conteúdo do script para dentro do arquivo.
 4. Execute o arquivo como **Administrador**.
 
 ---
@@ -32,6 +32,26 @@ Ela protege itens como:
 4. Localize **Proteção contra adulteração** e desative.
 
 Se estiver gerenciando via **Microsoft Defender for Endpoint** ou **Microsoft Intune**, ajuste a configuração nos painéis de administração antes de aplicar esse script.
+
+---
+
+## 📝 Como criar o arquivo `.bat` no Windows
+
+1. **Abra o Bloco de Notas**
+   - Pressione `Windows + R`
+   - Digite `notepad` e pressione `Enter`
+
+2. **Copie o conteúdo do script** (veja abaixo) e cole no Bloco de Notas.
+
+3. **Salve o arquivo como `.bat`**
+   - No Bloco de Notas, clique em `Arquivo` > `Salvar como...`
+   - Em **Tipo**, escolha `Todos os arquivos (*.*)`
+   - No **Nome do arquivo**, digite `desativa-protecao.bat`
+   - Salve onde preferir (ex: Desktop)
+
+4. **Execute o arquivo como Administrador**
+   - Clique com o botão direito no arquivo `.bat`
+   - Selecione **Executar como administrador**
 
 ---
 
