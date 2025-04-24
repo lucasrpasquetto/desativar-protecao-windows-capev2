@@ -1,14 +1,37 @@
 # 🛑 Desativar Proteções do Windows — CapeV2
 
-Este script `.bat` desativa diversas proteções nativas do Windows para fins de análise ou configuração controlada em ambientes de laboratório (como o CapeV2). **Use com responsabilidade**.
+Este script `.bat` desativa diversas proteções nativas do Windows para fins de análise ou configuração controlada em ambientes de laboratório (como o CapeV2).  
+**Use com responsabilidade**.
 
 ---
 
 ## 📜 Instruções
 
-1. Crie um arquivo chamado `desativa-protecao.bat`
-2. Copie o conteúdo abaixo e cole dentro do arquivo.
-3. Execute como **Administrador**.
+1. **Antes de executar o script, desative manualmente a Proteção contra Adulteração (Tamper Protection)** — veja como no passo abaixo.
+2. Crie um arquivo chamado `desativa-protecao.bat`.
+3. Copie o conteúdo do script abaixo e cole dentro do arquivo.
+4. Execute o arquivo como **Administrador**.
+
+---
+
+## 🔒 Desativar Proteção Contra Adulteração (Tamper Protection)
+
+A **Proteção contra adulteração** é um recurso de segurança do Windows 10 e 11 que impede alterações não autorizadas em configurações críticas, mesmo por usuários administradores.  
+Ela protege itens como:
+- Configurações do Windows Defender
+- Proteção em tempo real
+- Firewall
+- Outras proteções do sistema
+
+**Se essa proteção estiver ativa, o script abaixo não conseguirá desativar os recursos de segurança via Registro e serviços. Por isso, é necessário desativá-la manualmente antes.**
+
+### 📌 Como desativar no Windows 10 e 11:
+1. Abra a aplicação **Segurança do Windows**.
+2. Clique em **Proteção contra vírus e ameaças**.
+3. Em **Configurações de proteção contra vírus e ameaças**, clique em **Gerenciar configurações**.
+4. Localize **Proteção contra adulteração** e desative.
+
+Se estiver gerenciando via **Microsoft Defender for Endpoint** ou **Microsoft Intune**, ajuste a configuração nos painéis de administração antes de aplicar esse script.
 
 ---
 
