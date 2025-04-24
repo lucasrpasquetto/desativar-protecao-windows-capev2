@@ -1,0 +1,1 @@
+# desativar-protecao-windows-capev2
